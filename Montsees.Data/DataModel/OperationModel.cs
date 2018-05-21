@@ -140,7 +140,7 @@ namespace Montsees.Data.DataModel
     {
         string Column;
         string ColType;
-         
+          
     //    public DeptScheduleColumsnModel(string Column, string ColType)
     //    {
     //        public string Column { get; set; }
