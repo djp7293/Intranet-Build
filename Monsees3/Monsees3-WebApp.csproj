@@ -1,0 +1,849 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F1EC39A0-AC01-45A6-89FF-67C7C6EF8E07}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Monsees</RootNamespace>
+    <AssemblyName>Monsees</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BasicFrame.WebControls.BasicDatePicker">
+      <HintPath>Libraries\BasicFrame.WebControls.BasicDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper">
+      <HintPath>..\packages\Dapper.1.25\lib\net35\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.7.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa, Version=5.5.7.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="KeepDynamic.BarCode.AspNet, Version=5.0.0.0, Culture=neutral, PublicKeyToken=9dc4ac10e11ebefc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\KeepDynamic.BarCode.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ActiveJobs.aspx" />
+    <Content Include="activepartslist.aspx" />
+    <Content Include="NestedCtrlTest.aspx" />
+    <Content Include="ProdScheduleService.aspx" />
+    <Content Include="NestedActiveJobsCtrl.ascx" />
+    <Content Include="QuickFixture.aspx" />
+    <Content Include="AddFixture.aspx" />
+    <Content Include="AddToPO.aspx" />
+    <Content Include="CARLibrary.aspx" />
+    <Content Include="SetupSheet.aspx" />
+    <Content Include="CARComplete.aspx" />
+    <Content Include="ClearConfirmItemsInsp.aspx" />
+    <Content Include="css\printlandscape.css" />
+    <Content Include="InspectionInventory.aspx" />
+    <Content Include="InspectionReportInProcess.aspx" />
+    <Content Include="InspectionReportPrintFinal.aspx" />
+    <Content Include="InspectionRptInput.aspx" />
+    <Content Include="JobSummaryViewer.aspx" />
+    <Content Include="MaterialPOPrint.aspx" />
+    <Content Include="PrintInvoice.aspx" />
+    <Content Include="NestedLoginCtrl.ascx" />
+    <Content Include="ToolingSupplyPO.aspx" />
+    <Content Include="SubcontractPO.aspx" />
+    <Content Include="MaterialQuoteMgmt.aspx" />
+    <Content Include="ClearConfirmItems.aspx" />
+    <Content Include="FixtureList.aspx" />
+    <Content Include="FixtureInventory.aspx" />
+    <Content Include="CloseFixture.aspx" />
+    <Content Include="ClosePart.aspx" />
+    <Content Include="CloseFixtureService.aspx" />
+    <Content Include="ClosePartService.aspx" />
+    <Content Include="Controls\Navigation.ascx" />
+    <Content Include="css\closepart.css" />
+    <Content Include="css\lot.css" />
+    <Content Include="css\print.css" />
+    <Content Include="css\site.css" />
+    <Content Include="CustomerPO.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="DeliverySchedule.aspx" />
+    <Content Include="DeptSchedule.aspx" />
+    <Content Include="DeptSchedule_tmp.aspx" />
+    <Content Include="dropdown.css" />
+    <Content Include="EmployeeHistory.aspx" />
+    <Content Include="Forbidden.aspx" />
+    <Content Include="Forbidden.htm" />
+    <Content Include="POAudit.aspx" />
+    <Content Include="JobSummary.aspx" />
+    <Content Include="InspectionInput.aspx" />
+    <Content Include="Inspection.aspx" />
+    <Content Include="InspectionReport.aspx" />
+    <Content Include="InspectionReportPrint.aspx" />
+    <Content Include="InspectionRpt.aspx" />
+    <Content Include="InspectionService.aspx" />
+    <Content Include="Inventory.aspx" />
+    <Content Include="FixtureTag.aspx" />
+    <Content Include="Log.aspx" />
+    <Content Include="LotService.aspx" />
+    <Content Include="InventoryTag.aspx" />
+    <Content Include="jquery.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Lot.aspx" />
+    <Content Include="main-tmp.aspx" />
+    <Content Include="main.aspx" />
+    <Content Include="MaterialPO.aspx" />
+    <Content Include="SearchParts.aspx" />
+    <Content Include="ToolingSupplyPOList.aspx" />
+    <Content Include="MaterialPOList.aspx" />
+    <Content Include="MatPrepared.aspx" />
+    <Content Include="Monitor.aspx" />
+    <Content Include="FixturetoParts.aspx" />
+    <Content Include="MonitorOps.aspx" />
+    <Content Include="MonitorOps_temp.aspx" />
+    <Content Include="OrderDetails.aspx" />
+    <Content Include="AllocateFixture.aspx" />
+    <Content Include="PartHistory.aspx" />
+    <Content Include="password.aspx" />
+    <Content Include="PurchaseOrders.aspx" />
+    <Content Include="PVAInventory.aspx" />
+    <Content Include="Receipt.aspx" />
+    <Content Include="Reports\Label.aspx" />
+    <Content Include="Scripts\CRUDService.js" />
+    <Content Include="Scripts\jquery-1.11.1.min.js" />
+    <Content Include="Scripts\jquery.toast.js" />
+    <Content Include="Fixturing.aspx" />
+    <Content Include="ShippingReceiving.aspx" />
+    <Content Include="standard.css" />
+    <Content Include="style.css" />
+    <Content Include="SubcontractPOList.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="MaterialInventory.aspx" />
+    <Content Include="MaterialLabel.aspx" />
+    <Content Include="CARInitiate.aspx" />
+    <Content Include="ReworkLot.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActiveJobs.aspx.cs">
+      <DependentUpon>ActiveJobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ActiveJobs.aspx.designer.cs">
+      <DependentUpon>ActiveJobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NestedCtrlTest.aspx.cs">
+      <DependentUpon>NestedCtrlTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NestedCtrlTest.aspx.designer.cs">
+      <DependentUpon>NestedCtrlTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProdScheduleService.aspx.cs">
+      <DependentUpon>ProdScheduleService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProdScheduleService.aspx.designer.cs">
+      <DependentUpon>ProdScheduleService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NestedActiveJobsCtrl.ascx.cs">
+      <DependentUpon>NestedActiveJobsCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NestedActiveJobsCtrl.ascx.designer.cs">
+      <DependentUpon>NestedActiveJobsCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DataCtrl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuickFixture.aspx.cs">
+      <DependentUpon>QuickFixture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QuickFixture.aspx.designer.cs">
+      <DependentUpon>QuickFixture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddFixture.aspx.cs">
+      <DependentUpon>AddFixture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddFixture.aspx.designer.cs">
+      <DependentUpon>AddFixture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddToPO.aspx.cs">
+      <DependentUpon>AddToPO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddToPO.aspx.designer.cs">
+      <DependentUpon>AddToPO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CARLibrary.aspx.cs">
+      <DependentUpon>CARLibrary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CARLibrary.aspx.designer.cs">
+      <DependentUpon>CARLibrary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SetupSheet.aspx.cs">
+      <DependentUpon>SetupSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SetupSheet.aspx.designer.cs">
+      <DependentUpon>SetupSheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CARComplete.aspx.cs">
+      <DependentUpon>CARComplete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CARComplete.aspx.designer.cs">
+      <DependentUpon>CARComplete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClearConfirmItemsInsp.aspx.cs">
+      <DependentUpon>ClearConfirmItemsInsp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClearConfirmItemsInsp.aspx.designer.cs">
+      <DependentUpon>ClearConfirmItemsInsp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FullImage.ashx.cs">
+      <DependentUpon>FullImage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="InspectionInventory.aspx.cs">
+      <DependentUpon>InspectionInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InspectionInventory.aspx.designer.cs">
+      <DependentUpon>InspectionInventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintInvoice.aspx.cs">
+      <DependentUpon>PrintInvoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NestedLoginCtrl.ascx.cs">
+      <DependentUpon>NestedLoginCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NestedLoginCtrl.ascx.designer.cs">
+      <DependentUpon>NestedLoginCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="jQuery.ashx.cs">
+      <DependentUpon>jQuery.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Thumbnail.ashx.cs">
+      <DependentUpon>Thumbnail.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="InspectionReportInProcess.aspx.cs">
+      <DependentUpon>InspectionReportInProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InspectionReportInProcess.aspx.designer.cs">
+      <DependentUpon>InspectionReportInProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InspectionReportPrintFinal.aspx.cs">
+      <DependentUpon>InspectionReportPrintFinal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InspectionReportPrintFinal.aspx.designer.cs">
+      <DependentUpon>InspectionReportPrintFinal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InspectionRptInput.aspx.cs">
+      <DependentUpon>InspectionRptInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InspectionRptInput.aspx.designer.cs">
+      <DependentUpon>InspectionRptInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSummaryViewer.aspx.cs">
+      <DependentUpon>JobSummaryViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSummaryViewer.aspx.designer.cs">
+      <DependentUpon>JobSummaryViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\PrintLandscape.master.cs">
+      <DependentUpon>PrintLandscape.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\PrintLandscape.master.designer.cs">
+      <DependentUpon>PrintLandscape.master</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialPOPrint.aspx.cs">
+      <DependentUpon>MaterialPOPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterialPOPrint.aspx.designer.cs">
+      <DependentUpon>MaterialPOPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ToolingSupplyPO.aspx.cs">
+      <DependentUpon>ToolingSupplyPO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ToolingSupplyPO.aspx.designer.cs">
+      <DependentUpon>ToolingSupplyPO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SubcontractPO.aspx.cs">
+      <DependentUpon>SubcontractPO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubcontractPO.aspx.designer.cs">
+      <DependentUpon>SubcontractPO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialQuoteMgmt.aspx.cs">
+      <DependentUpon>MaterialQuoteMgmt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterialQuoteMgmt.aspx.designer.cs">
+      <DependentUpon>MaterialQuoteMgmt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClearConfirmItems.aspx.cs">
+      <DependentUpon>ClearConfirmItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClearConfirmItems.aspx.designer.cs">
+      <DependentUpon>ClearConfirmItems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FixtureList.aspx.cs">
+      <DependentUpon>FixtureList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FixtureList.aspx.designer.cs">
+      <DependentUpon>FixtureList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FixtureInventory.aspx.cs">
+      <DependentUpon>FixtureInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FixtureInventory.aspx.designer.cs">
+      <DependentUpon>FixtureInventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication.cs" />
+    <Compile Include="CloseFixture.aspx.cs">
+      <DependentUpon>CloseFixture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseFixture.aspx.designer.cs">
+      <DependentUpon>CloseFixture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClosePart.aspx.cs">
+      <DependentUpon>ClosePart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClosePart.aspx.designer.cs">
+      <DependentUpon>ClosePart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CloseFixtureService.aspx.cs">
+      <DependentUpon>CloseFixtureService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseFixtureService.aspx.designer.cs">
+      <DependentUpon>CloseFixtureService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClosePartService.aspx.cs">
+      <DependentUpon>ClosePartService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ClosePartService.aspx.designer.cs">
+      <DependentUpon>ClosePartService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Navigation.ascx.cs">
+      <DependentUpon>Navigation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Navigation.ascx.designer.cs">
+      <DependentUpon>Navigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerPO.aspx.cs">
+      <DependentUpon>CustomerPO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerPO.aspx.designer.cs">
+      <DependentUpon>CustomerPO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeliverySchedule.aspx.cs">
+      <DependentUpon>DeliverySchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeliverySchedule.aspx.designer.cs">
+      <DependentUpon>DeliverySchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeptSchedule.aspx.cs">
+      <DependentUpon>DeptSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeptSchedule.aspx.designer.cs">
+      <DependentUpon>DeptSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeHistory.aspx.cs">
+      <DependentUpon>EmployeeHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeHistory.aspx.designer.cs">
+      <DependentUpon>EmployeeHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="POAudit.aspx.cs">
+      <DependentUpon>POAudit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="POAudit.aspx.designer.cs">
+      <DependentUpon>POAudit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSummary.aspx.cs">
+      <DependentUpon>JobSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSummary.aspx.designer.cs">
+      <DependentUpon>JobSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InspectionInput.aspx.cs">
+      <DependentUpon>InspectionInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InspectionInput.aspx.designer.cs">
+      <DependentUpon>InspectionInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inspection.aspx.cs">
+      <DependentUpon>Inspection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inspection.aspx.designer.cs">
+      <DependentUpon>Inspection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InspectionReport.aspx.cs">
+      <DependentUpon>InspectionReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InspectionReport.aspx.designer.cs">
+      <DependentUpon>InspectionReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InspectionReportPrint.aspx.cs">
+      <DependentUpon>InspectionReportPrint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InspectionReportPrint.aspx.designer.cs">
+      <DependentUpon>InspectionReportPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InspectionRpt.aspx.cs">
+      <DependentUpon>InspectionRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InspectionRpt.aspx.designer.cs">
+      <DependentUpon>InspectionRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InspectionService.aspx.cs">
+      <DependentUpon>InspectionService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InspectionService.aspx.designer.cs">
+      <DependentUpon>InspectionService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory.aspx.cs">
+      <DependentUpon>Inventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inventory.aspx.designer.cs">
+      <DependentUpon>Inventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FixtureTag.aspx.cs">
+      <DependentUpon>FixtureTag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FixtureTag.aspx.designer.cs">
+      <DependentUpon>FixtureTag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Log.aspx.cs">
+      <DependentUpon>Log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Log.aspx.designer.cs">
+      <DependentUpon>Log.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LotService.aspx.cs">
+      <DependentUpon>LotService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LotService.aspx.designer.cs">
+      <DependentUpon>LotService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryTag.aspx.cs">
+      <DependentUpon>InventoryTag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventoryTag.aspx.designer.cs">
+      <DependentUpon>InventoryTag.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lot.aspx.cs">
+      <DependentUpon>Lot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lot.aspx.designer.cs">
+      <DependentUpon>Lot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\MonseesBlank.Master.cs">
+      <DependentUpon>MonseesBlank.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\MonseesBlank.Master.designer.cs">
+      <DependentUpon>MonseesBlank.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Print.master.cs">
+      <DependentUpon>Print.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Print.master.designer.cs">
+      <DependentUpon>Print.master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\Monsees.Master.cs">
+      <DependentUpon>Monsees.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Monsees.Master.designer.cs">
+      <DependentUpon>Monsees.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialPO.aspx.cs">
+      <DependentUpon>MaterialPO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterialPO.aspx.designer.cs">
+      <DependentUpon>MaterialPO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchParts.aspx.cs">
+      <DependentUpon>SearchParts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchParts.aspx.designer.cs">
+      <DependentUpon>SearchParts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ToolingSupplyPOList.aspx.cs">
+      <DependentUpon>ToolingSupplyPOList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ToolingSupplyPOList.aspx.designer.cs">
+      <DependentUpon>ToolingSupplyPOList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialPOList.aspx.cs">
+      <DependentUpon>MaterialPOList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterialPOList.aspx.designer.cs">
+      <DependentUpon>MaterialPOList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Monitor.aspx.cs">
+      <DependentUpon>Monitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Monitor.aspx.designer.cs">
+      <DependentUpon>Monitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FixturetoParts.aspx.cs">
+      <DependentUpon>FixturetoParts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FixturetoParts.aspx.designer.cs">
+      <DependentUpon>FixturetoParts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MonitorOps.aspx.cs">
+      <DependentUpon>MonitorOps.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MonitorOps.aspx.designer.cs">
+      <DependentUpon>MonitorOps.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MonseesDB.cs" />
+    <Compile Include="MonseesDBStaticTables.cs" />
+    <Compile Include="OrderDetails.aspx.cs">
+      <DependentUpon>OrderDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderDetails.aspx.designer.cs">
+      <DependentUpon>OrderDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderBase.designer.cs">
+      <DependentUpon>OrderBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DataPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllocateFixture.aspx.cs">
+      <DependentUpon>AllocateFixture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllocateFixture.aspx.designer.cs">
+      <DependentUpon>AllocateFixture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PartHistory.aspx.cs">
+      <DependentUpon>PartHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PartHistory.aspx.designer.cs">
+      <DependentUpon>PartHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ActivePartList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>activepartslist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PartList.aspx.designer.cs">
+      <DependentUpon>activepartslist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="password.aspx.cs">
+      <DependentUpon>password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="password.aspx.designer.cs">
+      <DependentUpon>password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs" />
+    <Compile Include="PurchaseOrders.aspx.cs">
+      <DependentUpon>PurchaseOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrders.aspx.designer.cs">
+      <DependentUpon>PurchaseOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PVAInventory.aspx.cs">
+      <DependentUpon>PVAInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PVAInventory.aspx.designer.cs">
+      <DependentUpon>PVAInventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt.aspx.cs">
+      <DependentUpon>Receipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Receipt.aspx.designer.cs">
+      <DependentUpon>Receipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Label.aspx.cs">
+      <DependentUpon>Label.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Label.aspx.designer.cs">
+      <DependentUpon>Label.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Rolemapper.cs" />
+    <Compile Include="Fixturing.aspx.cs">
+      <DependentUpon>Fixturing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fixturing.aspx.designer.cs">
+      <DependentUpon>Fixturing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingReceiving.aspx.cs">
+      <DependentUpon>ShippingReceiving.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShippingReceiving.aspx.designer.cs">
+      <DependentUpon>ShippingReceiving.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Print.master.cs">
+      <DependentUpon>Print.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Print.master.designer.cs">
+      <DependentUpon>Print.master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.master.cs">
+      <DependentUpon>Site.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.master.designer.cs">
+      <DependentUpon>Site.master</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialInventory.aspx.cs">
+      <DependentUpon>MaterialInventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterialInventory.aspx.designer.cs">
+      <DependentUpon>MaterialInventory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialLabel.aspx.cs">
+      <DependentUpon>MaterialLabel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterialLabel.aspx.designer.cs">
+      <DependentUpon>MaterialLabel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CARInitiate.aspx.cs">
+      <DependentUpon>CARInitiate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CARInitiate.aspx.designer.cs">
+      <DependentUpon>CARInitiate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReworkLot.aspx.cs">
+      <DependentUpon>ReworkLot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReworkLot.aspx.designer.cs">
+      <DependentUpon>ReworkLot.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="NewFolder1\" />
+    <Folder Include="NewFolder2\" />
+    <Folder Include="Service References\" />
+    <Folder Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config.abc" />
+    <Content Include="pdfhandler.ashx" />
+    <Content Include="packages.config" />
+    <Content Include="MasterPages\Print.master" />
+    <Content Include="MasterPages\Monsees.Master" />
+    <Content Include="MasterPages\MonseesBlank.Master" />
+    <Content Include="MasterPages\PrintLandscape.master" />
+    <Content Include="Thumbnail.ashx" />
+    <None Include="Properties\PublishProfiles\monsees.pubxml" />
+    <None Include="Properties\PublishProfiles\monseestool.pubxml" />
+    <None Include="Properties\Settings.settings" />
+    <Content Include="Verisurf.ttf" />
+    <Content Include="Site.master" />
+    <Content Include="Print.master" />
+    <Content Include="Scripts\jquery.valuechanging.js" />
+    <Content Include="FullImage.ashx" />
+    <Content Include="jQuery.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Monsees.Services\Monsees.Services.csproj">
+      <Project>{bbfe05a6-f9f7-4d7e-9e9c-23e9efd5e027}</Project>
+      <Name>Monsees.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Montsees.Data\Montsees.Data.csproj">
+      <Project>{c0df952f-2661-44d5-b20b-834eafdbfb72}</Project>
+      <Name>Montsees.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61170</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:61170/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

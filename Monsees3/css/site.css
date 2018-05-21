@@ -1,0 +1,151 @@
+﻿body
+{
+	font-family:Arial;
+	font-size:12pt;
+	margin:0pt;
+}
+
+a.button
+{
+	border-radius:3px;
+	background: #f9f9f9; /* Old browsers */
+	background: linear-gradient(to bottom, #f9f9f9 1%,#d8d8d8 100%); /* W3C */
+	border: #b8b8b8 1px solid;
+	text-decoration:none;
+	color:#333;
+	font-size:10pt;
+	transition: background-color 1.0s;
+	height:22px;
+	line-height:22px;
+	display:inline-block;
+	text-align:center;
+}
+
+a.button.disabled 
+{
+	opacity:0.5;
+}
+
+a.button span
+{
+	height:22px;
+	line-height:22px;
+	display:inline-block;
+	margin-left:5pt;
+	margin-right:5pt;
+}
+
+a.button:hover {
+	background: #e8e8e8; /* Old browsers */
+	background: linear-gradient(to bottom, #f9f9f9 1%,#ffffff 100%); /* W3C */
+	transition: background-color 1.0s;
+}
+
+a.button.action {
+	background: #082E9B; /* Old browsers */
+	background: linear-gradient(to bottom, #666 1%,#333 100%); /* W3C */
+	color:white;
+}
+
+a.button.action:hover 
+{
+	background: linear-gradient(to bottom, #BBB 1%,#999 100%); /* W3C */
+}
+
+.toast{ position:fixed; list-style: none; padding: 0; top:0; z-index: 999999; font-family: Arial; font-size:14px; line-height:20px; }
+.toast li{ margin: 10px 0 0 0; display:block; background-color: #075091; border-color: #075091; color:#FFF; border:1px solid #fbeed5; padding:5px 10px; border-radius: 4px; -webkit-border-radius: 4px; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); box-shadow: 0 2px 5px rgba(0,0,0,.15); -webkit-box-shadow: 0 2px 5px rgba(0,0,0,.15); }
+.toast li:first-child{ margin-top:0; }
+.toast li.error{ color: #b94a48; background-color: #f2dede; border-color: #eed3d7; }
+.toast li.info{ color: #FFF; background-color: #075091; border-color: #075091; }
+.toast li.success{ color: #468847; background-color: #dff0d8; border-color: #d6e9c6; }
+.toast button.close{ background: none; border: none; font-weight: bold; font-size: 20px; line-height: 20px; float: right; padding: 0; margin: 0 0 0 5px; color: rgba(0,0,0,.25); cursor: pointer; }
+.toast h1, .toast h2, .toast h3, .toast h4 { display: inline; }
+
+/*** TOP NAVIGATION ***/
+.top-navigation
+{
+	width:100%;
+	background:#075091;
+	height:32px;
+	color:white;
+}
+
+.top-navigation a,
+.top-navigation a:active,
+.top-navigation a:visited {
+	color:white;
+}
+
+.top-navigation .menu-items
+{
+	list-style:none;
+	line-height:32px;
+	height:32px;
+	float:left;
+	margin:0;
+	padding:0;
+	margin-left:10pt;
+}
+
+.top-navigation .menu-items li 
+{
+	line-height:32px;
+	height:32px;
+	display:inline-block;
+	margin:0;
+	padding:0;
+
+}
+
+.top-navigation .menu-items li a {
+    background:#043560;
+
+    cursor:pointer;
+    text-decoration:none;
+    line-height:32px;
+    height:32px;
+    display:inline-block;
+    margin:0px;
+}
+
+.top-navigation .menu-items li a:active,
+.top-navigation .menu-items li a:hover
+{
+    background:#DDD;
+    color:#333;
+}
+
+
+.top-navigation .menu-items li a span
+{
+    padding-left:10px;
+    padding-right:10px;
+
+}
+
+
+.top-navigation .right-items
+{
+	float:right;
+		line-height:32px;
+	height:32px;
+	margin-right:10pt;
+}
+
+.content
+{
+	margin:10pt;
+}
+
+.inspection-item td
+{
+    background-color:#FFFFFF;
+    transition: background-color linear 0.5s;
+}
+
+.dirty td
+{
+    background-color:#f2dede;
+    transition: background-color linear 0.5s;
+}
+

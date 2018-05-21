@@ -1,0 +1,119 @@
+﻿
+	.summary {
+		height: 57px;
+    width: 1262px;
+    border-bottom-style: solid;
+    border-bottom-color: inherit;
+    border-bottom-width: 1px;
+}
+
+	.header .title
+	{
+		font-size:24pt;
+	}
+
+	.header 
+	{
+		padding-bottom:16pt;
+		border-bottom:1px solid;
+	}
+
+	.title {
+		float:left;
+	}
+	.navigation {
+		float:right;
+	}
+
+	.part {
+		float:left;
+		font-size:16pt;
+		margin: 5pt 0pt 5pt 0pt;
+	}
+
+	.job {
+		float:right;
+		font-size:16pt;
+		margin: 5pt 0pt 5pt 0pt;
+	}
+
+	.label {
+		font-weight:bold;
+	}
+
+	.comments {
+		font-size:12pt;
+	}
+
+	.header {
+		width:100%;
+    height: 36px;
+}
+
+	.info {
+		width:100%;
+	}
+
+	.grid {
+		 width:100%;
+	}
+
+	span.completed {
+		color:red;
+		font-weight:bold;
+	}
+
+	span.completed.yes 
+	{
+		font-weight:bold;
+		color:green;
+	}
+	
+	.button.completed
+	{
+		background-color:#075091;
+		color:white;
+	}
+
+	.button.completed.yes
+	{
+
+	}
+ 
+	.grid .button {
+		width:99%;
+	}
+
+	.lot {
+		max-width:1000px;
+		margin-top:10pt;
+	}
+
+	.heading-box {
+		font-size:16pt;
+		font-weight:bold;
+		margin-top:20pt;
+	}
+
+	.heading-box .title {
+		float:left;
+		display:inline-block;
+		max-width:49%;
+		border:none;
+		margin-bottom:10pt;
+
+	}
+
+	.heading-box .info {
+		float:right;
+		display:inline-block;
+		max-width:49%;
+		text-align:right;
+				color:#666;
+	}
+
+	 thead th, tbody th
+	 {
+		 background:#000084;
+		 color:white;
+	 }

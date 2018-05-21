@@ -1,0 +1,113 @@
+﻿@font-face {
+    font-family: Verisurf;
+    src: url("/Verisurf.ttf");
+
+}
+
+
+	body {
+		font-family: Arial;
+		margin:50px;
+		width:7.5in;
+	}
+
+	.dimension {
+		font-family:Verisurf;
+	}
+
+	table.report-body
+	{
+		border-collapse:collapse;
+	}
+
+	table.report-body td
+	{
+		border-collapse:collapse;
+		border:#000 2px solid;
+		padding: 2px 4px;
+	}
+
+	table.report-body thead 
+	{
+		font-weight:bold;
+	}
+
+ 
+	table.report-body td.thick-left
+	{
+		border-left:4px solid;
+	}
+
+	table.report-body td.thick-right{
+		border-right:4px solid;
+	}
+
+
+	@media print {
+
+		body {
+			margin: 0px;
+			padding: 0px;
+			width: 7.5in;
+		}
+
+		 @page {
+		  size: letter;
+		  margin: auto;
+		}
+	}
+
+	.left {
+		float:left;
+	}
+
+	.right { 
+		float:right;
+	}
+	
+	.report-heading, .report-body, .report {
+		width:9.16in;
+	}
+
+	.report
+	{
+		border-style: solid;
+    border-color: inherit;
+    border-width: 1px;
+    height: 191px;
+}
+
+	.report-heading {
+		border-bottom:0px;
+		padding:0pt;
+	}
+
+	.report-heading .top.left {
+		width:60%;
+		margin-left:16pt;	
+		margin-bottom:5pt;
+	}
+
+	.report-heading .top.right {
+		margin-right:16pt;
+		margin-bottom:5pt;
+	}
+
+	.report-heading h4 {
+		text-align:center;
+		color:red;
+		margin:5pt;
+	}
+
+	.report-heading h4 span
+	{
+		font-weight:normal;
+	}
+
+	.report-heading .label {
+		font-weight:bold;
+		text-align:right;
+		vertical-align:top;
+	}
+
+	 

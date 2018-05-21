@@ -1,0 +1,115 @@
+﻿.close-part {
+			width:170pt;
+			margin-right:auto;
+			float:left;
+			margin-right:10pt;
+		
+		}
+		 
+		.close-part input
+		{
+			width:30pt;
+		}
+		.close-part .label
+		{
+			float:left;
+			width:90pt;
+		}
+
+		.close-part .label.heading
+		{
+			float:none;
+		}
+
+		#closePartButton,#printLabelButton {
+			float:right;
+			margin-top:10pt;
+		}
+
+		 #printLabelButton.hidden{
+			 display:none;
+		 }
+
+		 #moveToInventory {
+			float:left;
+			
+		}
+		
+		 .v-divider {
+			 float:left;
+			 width:1px;
+			 background:#CCC;
+			 min-height:300px;
+			 margin-left:10pt;
+			 margin-right:20pt;
+		 }
+		 
+	
+		 .existingInventoryGrid
+		 {
+			 border-collapse:collapse;
+			 min-width:300pt;
+			 border:1px;
+		 }
+
+		 #moveToInventoryForm {
+			 margin-top:10pt;
+			 margin-bottom:10pt;
+			 float:right;
+		 }
+
+		 #moveToInventoryForm td.label {
+			 text-align:right;
+			 font-weight:bold
+		 }
+
+		 #moveToInventoryButton {
+			 width:100%;
+		 }
+		 
+
+		 .header .title
+		 {
+			 display:inline-block;
+			 float:none;
+		 }
+
+		 .header .revision{
+			 font-weight:bold;
+		 }
+
+		 .placeholder div
+		 {
+			 padding:15pt;
+			 text-align:center;
+			 font-style:italic;
+
+		 }
+
+		 .total-allocated
+		 {
+			 font-weight:bold;
+			 border-top:#CCC 1px solid;
+
+		 }
+
+		 .computed
+		 {
+			font-style:italic;
+		 }
+
+		 .heading
+		 {
+
+		 }
+
+		 .data.computed
+		 {
+			 margin-top:10pt;
+			 text-align:right;
+		 }
+
+		 #produced 
+		 {
+			 float:right;
+		 }

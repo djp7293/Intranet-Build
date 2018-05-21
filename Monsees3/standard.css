@@ -1,0 +1,68 @@
+
+
+A
+{
+    COLOR: blue;
+    CURSOR: hand;
+    FONT-FAMILY: verdana;
+    FONT-SIZE: 1em;
+    FONT-WEIGHT: normal;
+    TEXT-DECORATION: underline
+}
+A.Command:link
+{
+    COLOR: blue;
+    CURSOR: hand;
+    FONT-FAMILY: verdana;
+    FONT-SIZE: 1em;
+    FONT-WEIGHT: normal;
+    TEXT-DECORATION: none
+}
+A.Command:hover
+{
+    COLOR: black;
+    CURSOR: hand;
+    FONT-FAMILY: verdana;
+    FONT-SIZE: 1em;
+    FONT-WEIGHT: normal;
+    TEXT-DECORATION: none
+}
+A.Command:visited
+{
+    COLOR: orange;
+    CURSOR: hand;
+    FONT-FAMILY: verdana;
+    FONT-SIZE: 1em;
+    FONT-WEIGHT: normal;
+    TEXT-DECORATION: none
+}
+
+.ProgramHeaderDataTable 
+{ 
+borderColor="#ffffff";
+height="1";
+cellSpacing="1";
+borderColorDark="#0000080";
+cellPadding="1";
+width="100%";
+borderColorLight="#000080";
+border="1";
+ }
+
+.ProgramTable 
+{
+border="0";
+cellpadding="0";
+cellspacing="0";
+width="100%";
+}
+
+.hiddencol
+    {
+        display:none;
+    }
+    .viscol
+    {
+        display:block;
+    }
+

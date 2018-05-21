@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Monsees.Master.cs" Inherits="Monsees.MasterPages.MonseesMaster" %>
+<%@ Register Src="~/Controls/Navigation.ascx" TagName="Navigation" TagPrefix="c" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<link rel="stylesheet" type="text/css" href="/css/site.css" />
+	<script type="text/javascript" src="/Scripts/jquery-1.11.1.min.js"></script>
+    <asp:ContentPlaceHolder ID="headContent" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+	
+		<c:Navigation runat="server" />
+
+    <div class="content" >
+        <asp:ScriptManager ID="ScriptManagerMain" runat="server"></asp:ScriptManager>
+
+        <asp:ContentPlaceHolder ID="bodyContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
